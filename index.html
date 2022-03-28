@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML TABLE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Inline stylesheet -->
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+        }
+        th, td{
+            padding:15px;
+        }
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        caption{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Health Chart</caption>
+        <tr>
+            <th rowspan="2">State of Health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After eating</th>
+        </tr>
+        <tr>
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>2 hours after eating</th>
+        </tr>
+        <tr>
+            <th>Healthy</th>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <th>Pre-Diabetes</th>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <th>Diabetes</th>
+            <td>more than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
